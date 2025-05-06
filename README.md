@@ -36,12 +36,12 @@ trouve le bon chiffre
 </head>
 <body>
   <h1>🎯 Trouve le nombre magique !</h1>
-  <p>Devine un nombre entre 1 et 20</p>
-  <input type="number" id="guess" min="1" max="20">
+  <p>Devine un nombre entre 1 et 1000</p>
+  <input type=\"number\" id=\"guess\" min=\"1\" max=\"1000\">
   <button onclick="checkGuess()">Deviner</button>
   <div id="message"></div>
   <script>
-    let secretNumber = Math.floor(Math.random() * 20) + 1;
+    let secretNumber = Math.floor(Math.random() * 1000) + 1;
     let attempts = 0;
 
     function checkGuess() {
@@ -50,7 +50,7 @@ trouve le bon chiffre
       attempts++;
 
       if (!guess || guess < 1 || guess > 20) {
-        message.textContent = "Entre un nombre entre 1 et 20 !";
+        message.textContent = "Entre un nombre entre 1 et 1000 !";
         return;
       }
 
