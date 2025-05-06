@@ -49,7 +49,7 @@ trouve le bon chiffre
       const message = document.getElementById('message');
       attempts++;
 
-      if (!guess || guess < 1 || guess > 20) {
+      if (!guess || guess < 1 || guess > 1000) {
         message.textContent = "Entre un nombre entre 1 et 1000 !";
         return;
       }
